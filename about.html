@@ -67,9 +67,35 @@
             padding: 20px;
         }
         #image {
-            height= 150px;
-            width = 150px;
+            height= 1%;
+            width = 1%;
         }
+        section {
+                margin-bottom: 2em;
+                background-color: #FFFFCC;
+                padding: 1.5em;
+                border-radius: 8px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+        .flex-container {
+                display: flex;
+                gap: 20px;
+                align-items: center;
+            }
+
+            .flex-container .image-container {
+                flex: 4;
+            }
+        
+         .flex-container .text-container {
+                flex: 3;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .flex-container img {
+                    height: auto;
+                }
         footer {
             
         }
@@ -78,23 +104,31 @@
 <body>
     <nav>
         <a href="index.html" id = "navtext1">Home</a>
-        <a href="about.html" id = "navtext1">About</a>
+        <a href="about.html" id = "navtext2">About</a>
     </nav>
     <div class="content">
          <div class="photo"></div>
         <div class="name">
         <h3>Joseph Sim</h3>
         </div>
-        <div id = "description"><p>
-            My name is Joseph Sim and I am a prospective student that is looking to learn more about marketing. I have hobbies in making music and creating content. 
-            I also have experience in photography and have used that to make some of my content before. Below is a photo that I took a while back of the suburb city scape area in the snowy season.
-            </p></div>
         
-        <img id="image"src = "IMG_5149.png" alt="snowy city">
+        <section id = "first">
+            <article class="flex-container">
+                    <div class="image-container">
+                    
+                    </div>
+            <div class="text-container">    
+            <p>My name is Joseph Sim and I am a prospective student that is looking to learn more about marketing. I have hobbies in making music and creating content. 
+            I also have experience in photography and have used that to make some of my content before. Below is a photo that I took a while back of the suburb city scape area in the snowy season.
+            </p>
+                </div>
+            </article>
+        </section>
+        
             
         
         <footer>
-    <p>2024 by Joseph Sim for BATECH 189</p>
+    <p>© 2024 by Joseph Sim for BATECH 189</p>
         </footer>
     </div>
     
